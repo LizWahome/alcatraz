@@ -169,8 +169,7 @@ class _SimpleCalculatorState extends State<SimpleCalculator> {
                         buildButton("9", 1, Colors.black54),
                       ],
                     ),
-                    TableRow(
-children: [
+                    TableRow(children: [
                       buildButton("4", 1, Colors.black54),
                       buildButton("5", 1, Colors.black54),
                       buildButton("6", 1, Colors.black54),
@@ -214,5 +213,9 @@ children: [
     );
   }
 
-  buttonPressed(String buttonText) {}
+  buttonPressed(String buttonText) {
+    setState(
+      () => {_SimpleCalculatorState},
+    );
+  }
 }
